@@ -7,7 +7,7 @@ sleep 15s
 echo "[INFO] Removing replaceable files from /home/klovercloud/app";
 ######
 echo "[INFO] Copying app files to /home/klovercloud/app";
-cp -r /home/klovercloud/tmp/app /home/klovercloud
+time cp -r /home/klovercloud/tmp/app /home/klovercloud --verbose
 echo "[INFO] App files copied to /home/klovercloud/app";
 sleep 3s
 echo '[INFO] Config Initialization Completed';
