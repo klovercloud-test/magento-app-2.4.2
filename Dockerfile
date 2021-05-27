@@ -1,4 +1,4 @@
-FROM klovercloud/php-7.4-apache2-magento-base-image:v1.0.0
+FROM klovercloud/php-7.4-apache2-magento-base-image:v1.0.1
 
 WORKDIR $TEMP_APP_HOME
 
