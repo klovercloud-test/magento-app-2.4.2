@@ -8,8 +8,6 @@ COPY . .
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer --version=1.10.15
 
 # install all PHP dependencies
-RUN cp composer.lock composer.lock.bk
-RUN rm -rf composer.lock
 RUN composer install --no-interaction
 
 RUN chmod +x init.sh
